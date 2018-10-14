@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    background-image: -ms-linear-gradient(bottom right, #711b86 0%, #00057a 100%);
+
+    /* Mozilla Firefox */ 
+    background-image: -moz-linear-gradient(bottom right, #711b86 0%, #00057a 100%);
+
+    /* Opera */ 
+    background-image: -o-linear-gradient(bottom right, #711b86 0%, #00057a 100%);
+
+    /* Webkit (Safari/Chrome 10) */ 
+    background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #711b86), color-stop(100, #00057a));
+
+    /* Webkit (Chrome 11+) */ 
+    background-image: -webkit-linear-gradient(bottom right, #711b86 0%, #00057a 100%);
+
+    /* W3C Markup */ 
+    background-image: linear-gradient(to top left, #711b86 0%, #00057a 100%);
+}
+
+
+.search.mat-form-field{
+    &.mat-form-field-appearance-legacy .mat-form-field-underline{
+        background-color: rgba($color: #FFF, $alpha: 0.42);
+    }
+    &.mat-form-field-appearance-legacy .mat-form-field-label{
+        color: rgba($color: #FFF, $alpha: 0.54);
+    }
+}

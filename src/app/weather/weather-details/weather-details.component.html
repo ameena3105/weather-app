@@ -1,0 +1,19 @@
+<!-- <button mat-stroked-button (click)="getWeather()">Get</button>-->
+
+<div fxLayout="column" fxFlex.lt-sm="100%" fxLayoutAlign="space-between center">
+  <div class="weather-wrapper" *ngIf="weather">
+    <div fxLayout="row" fxLayoutAlign="space-between center">
+      <h1 class="temprature"><span class="image" [style.background-position]="getWeatherType(weather.type)"></span>{{weather.tempature}}&deg; c</h1>
+      <h1 class="city">{{weather.city | uppercase}}</h1>
+    </div>
+    <div class="detail-info" fxLayout="row" fxLayoutAlign="space-between center">
+        <h3 class="suntime" fxLayout="column" fxLayoutAlign="space-around center" >
+          <span>Sunrise</span><span class="value">{{weather.sunrise | date: 'shortTime'}}</span>
+        </h3>
+        <div class="divider"></div>
+        <h3 class="suntime" fxLayout="column" fxLayoutAlign="space-around center">
+          <span>Sunset</span><span class="value">{{weather.sunset | date: 'shortTime'}}</span>
+        </h3>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.search.mat-form-field{
+    color: rgba($color: #FFF, $alpha: 1.0);
+    width: 30%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .search.mat-form-field,.cities{
+        width: 80%;
+    }
+}

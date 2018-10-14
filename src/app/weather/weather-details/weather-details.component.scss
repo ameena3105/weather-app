@@ -1,0 +1,65 @@
+.weather-wrapper{
+    border: 2px solid rgba($color: #FFF, $alpha: 0.6);
+    border-radius: 20px;
+    margin-top: 40px;
+    color: rgba($color: #FFF, $alpha: 1);
+    padding: 20px;
+    width: 80%;
+    margin: 40px 0;
+
+    .temprature{
+        display: flex;
+        align-items: center;
+        font-weight: 100;
+        font-size: 3em;
+        margin: 0;
+        .image{
+            background-image: url('../../../assets/images/weather-icons-set.png');
+            background-position: 153px -23px;
+            background-size: 600%;
+            height: 80px;
+            width: 80px;
+            float: left;
+        }
+    }
+    .city{
+        font-weight: 300;
+        margin: 0 100px 0 0;
+    }
+
+    .detail-info{
+        width: 200px;
+        
+        .suntime{
+            font-weight: 200;
+            font-size: 1em;
+            
+            .value{
+                font-size: .8em;
+                font-weight: 400;
+                margin-top: 8px;
+            }
+        }
+        .divider {
+            height: 40px;
+            display: flex;
+            border-left: 1px solid rgba($color: #FFF, $alpha: 0.6);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .weather-wrapper{
+        .temprature{
+            font-size: 1.2em;
+        }
+        .city{
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .detail-info{
+            width: 100%;
+        }
+    }
+    
+}
